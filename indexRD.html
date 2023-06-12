@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.67">
+    <title>Redes</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+
+<body style="justify-content: center; text-align: center; "> 
+
+    <header>
+        <nav>
+          <ul>
+            <li><pre style="font-size: 35px;">&lt;/&gt;</pre></li>
+            <li><a href="#Sobre_mim">Sobre Mim</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+            <li><a href="#Meus_Projetos">Meus Projetos</a></li>
+            <li class="dropdown">
+                <button class="dropbtn">
+                  <a href="#Conteudos">Conteúdos Aprendidos</a>
+                </button>
+                <div class="dropdown-content">
+                  <a href="/indexLP.html">Linguagem de Programação</a>
+                  <a href="/indexRD.html">Redes</a>
+                  <a href="/indexBD.html">Banco de Dados</a>
+                  <a href="/indexCD.html">Ciência de Dados</a>
+                  <a href="/indexAI.html">Automação Industrial</a>
+                </div>
+            <li>
+                <input type="checkbox" id="chk" class="checkbox">
+                <label for="chk" class="label">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <span class="ball"></span>
+                </label>
+                
+            </li>
+              </li>
+          </ul>
+        </nav>
+    </header>
+    <a href="/index.html"><button style="height:50px; width: 70px; border-radius: 10px; background-color: #0459c2dd; color: #f5f5f5; font-size: 18px; margin-right:70%;margin-top: 20px;">Voltar</button></a>
+
+    <h3 style="color: #0459c2dd; font-weight: 700; font-size: 59px; margin-top: 30px; margin-bottom: 90px;"><p>Redes</h3></p>
+
+    <div class="conteúdos_redes">
+        <h3 style="color: #0459c2dd; font-weight: 700; font-size: 29px;">Sobre Redes (tecnologia da informação e conectividade)</h3>
+        <h4 class="definicao" style="color: #0459c2dd; font-weight: 500; font-size: 22px; text-align: left;">O que é?<button style="margin-bottom: 20px;" id="botao1">▼</button></h4>
+        <div id="texto1" style="display: none;">
+          <p style="text-align: left;">Na disciplina de Tecnologia da Informação e Conectividade, mas conhecido por redes, aprendemos bastante sobre diversos assuntos e tópicos à comunicação de dados e redes de computadores. Vou resumir cada um desses tópicos de forma calara e usando exemplos.</p>
+          <p style="text-align: left;">As redes de computadores: São sistemas que permitem a comunicação entre diferentes dispositivos, como computadores, smartphones e servidores. Essas redes podem ser locais como as (LAN's), como a rede Wi-Fi presente em nossas casas, ou podem se estender por áreas maiores, como redes metropolitanas (MAN) e redes de longa distância (WAN), como a internet.</p>
+        </div>
+        <h4 class="definicao" style="color: #0459c2dd; font-weight: 500; font-size: 22px; text-align: left;">Modelo OSI<button style="margin-bottom: 20px;" id="botao2">▼</button></h4>
+        <div id="texto2" style="display: none;">
+          <p style="text-align: left;">É um modelo de referência que divide o processo de comunicação em sete camadas, cada uma com funções específicas. Essas camadas vão desde a camada física, que lida com a transmissão de sinais elétricos ou ópticos, até a camada de aplicação, que lida com os programas e serviços usados pelos usuários. O modelo OSI ajuda a entender como os diferentes componentes de uma rede interagem entre si.</p>
+        </div>
+        <h4 class="definicao" style="color: #0459c2dd; font-weight: 500; font-size: 22px; text-align: left;">Topologia de Redes<button style="margin-bottom: 20px;" id="botao3">▼</button></h4>
+        <div id="texto3" style="display: none;">
+          <p style="text-align: left;">Tem como forma os dispositivos em uma rede estão conectados uns aos outros. Existem várias topologias, como a topologia em estrela, em que todos dispositivos se conectam a um ponto central, e a topologia em anel, em que os dispositivos formam um anel fechado. Cada topologia tem vantagens e desvantagens em termos de custo, desempenho e confiabilidade.</p>
+        </div>
+        <h4 class="definicao" style="color: #0459c2dd; font-weight: 500; font-size: 22px; text-align: left;">Tipos de Redes<button style="margin-bottom: 20px;" id="botao4">▼</button></h4>
+        <div id="texto4" style="display: none;">
+          <p style="text-align: left;">LAN (Local Area Network): É uma rede local que abrange uma área limitada, como uma casa, escritório ou escola. Por exemplo, a rede Wi-Fi em sua casa.</p>
+          <p style="text-align: left;">MAN (Metropolitan Area Network): É uma rede que abrange uma área geográfica maior, como uma cidade. Por exemplo, uma empresa com filiais em diferentes locais da cidade interconectadas.</p>
+          <p style="text-align: left;">WAN (Wide Area Network): É uma rede de longa distância que se estende por uma grande área, como um país ou até mesmo globalmente, como a internet. Por exemplo, a conexão de rede que permite a comunicação entre diferentes países.</p>
+          <p style="text-align: left;">CAN (Campus Area Network): É uma rede que abrange um campus universitário, parque industrial ou local semelhante. Por exemplo, uma universidade interligando seus prédios e laboratórios.</p>
+          <p style="text-align: left;">PAN (Personal Area Network): É uma rede pessoal que conecta dispositivos de curto alcance, geralmente pertencentes a uma única pessoa. Por exemplo, a conexão Bluetooth entre um smartphone e fones de ouvido sem fio.</p>
+        </div>
+        <h4 class="definicao" style="color: #0459c2dd; font-weight: 500; font-size: 22px; text-align: left;">Endereço MAC<button style="margin-bottom: 20px;" id="botao5">▼</button></h4>
+        <div id="texto5" style="display: none;">
+          <p style="text-align: left;">É um identificador único atribuído a cada dispositivo de rede. É como o RG de um dispositivo de rede, pois cada dispositivo possui um endereço MAC exclusivo que é definido de fábrica.</p>
+        </div>
+        <h4 class="definicao" style="color: #0459c2dd; font-weight: 500; font-size: 22px; text-align: left;">IPV4 e IPV6<button style="margin-bottom: 20px;" id="botao6">▼</button></h4>
+        <div id="texto6" style="display: none;">
+          <p style="text-align: left;">O IPv4 é um tipo de endereço que os computadores usam para se comunicar na internet. Ele é composto por quatro conjuntos de números separados por pontos, como 192.168.0.1. No entanto, o IPv4 está ficando sem endereços disponíveis devido ao crescimento da internet. O IPv6 é uma versão mais recente do protocolo de internet e foi projetado para substituir gradualmente o IPv4. Ele usa endereços de IP de 128 bits, permitindo um número muito maior de combinações possíveis e oferecendo melhor segurança e eficiência.</p>
+        </div>
+      </div>
+      
+      
+    
+    <h3 style="color: #0459c2dd; font-weight: 700; font-size: 59px; margin-top: 250px; margin-bottom: 200px;"><p>Projetos Desenvolvidos</h3></p>
+
+    <section id="Meus_Projetos">
+        <div class="projetos">
+          <div class="video-container">
+            <video id="meu-video" controls width="400" height="auto">
+              <source src="/imagens/Cisco Packet Tracer - C__Users_Vincenzo Amendola_Downloads_cazaquistao_zimbabue.pkt 2023-06-12 13-42-32.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="text-container" style="font-size: 20px; font-family: Helvetica;">
+            <h4 style="font-size: larger; color: #0459c2dd;">Projeto simulador Cazaquistão X Zimbabue</h4>
+            <p>Neste projeto nós desenvolvemos em sala de aula um projeto que simulava a comunicação da redes, entre dois países bem afastados, entre eles o Cazaquistão e o Zimbabue. O Cazaquistão por sua vez  possuia ferramentas como servidores, roteadores, computadores e switch's, já o Zimbabue possuia apenas dois computadores e um switch e um roteador. 
+            </p>
+            <h4 style="font-size: larger; color: #0459c2dd;">Como Construímos este projeto?</h4>
+            <p>Neste projeto utilizamos um programa chamado Packet Tracer, ele é um dos mais conhecidos na área de redes, por simular muito bem como funciona cada componente de um ambiente de rede. O Packet Tracer é amplamente utilizado para fins educacionais e de treinamento, pois permite aos usuários criar e configurar redes virtuais, simulando dispositivos de rede, como roteadores, switches, computadores e servidores.
+            <h4 style="font-size: larger; color: #0459c2dd;"><em>Objetivo?</em></h4>
+            <p>Este projeto consiste em basicamente em configurar uma rede inteiramente no Packet Tracer para permitir a comunicação entre o Cazaquistão e Zimbábue. Isso é feito conectando "fisicamente", (no entanto se tratando de uma simulação), na onde conectamos os dispositivos, atribuindo neles endereços IP a cada um deles, configurando as rotas nos roteadores e testando a conectividade deles. O objetivo é estabelecer uma comunicação eficiente entre os  dois países simulados no software. </p>
+            <h4 style="font-size: larger; color: #0459c2dd; font-weight: bolder;"> <em>FeedBack</em></h4>
+            <p>Como FeedBack final deste projeto, acredito que ele foi fundamental para enterdermos, como funciona a comunicação de redes entre dois pontos mesmo que distantes, deu para ter uma noção de como funciona. </p>
+          </div>
+        </div>
+        <div class="projetos">
+            <div class="video-container">
+              <video id="meu-video" controls width="400" height="auto">
+                <source src="/imagens/Cisco Packet Tracer - C__Users_Vincenzo Amendola_Downloads_Rede ISP (1).pkt 2023-06-12 14-57-16.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="text-container" style="font-size: 20px; font-family: Helvetica;">
+              <h4 style="font-size: larger; color: #0459c2dd;">Projeto simulador Rede ISP</h4>
+              <p>Neste projeto podemos notar o uso de ferramentas e elementos, como servidores, roteador (dentre eles o residencial e o empresarial), switch, modem, uma simulação do cloud e computadores e smartphones. 
+              </p>
+              <h4 style="font-size: larger; color: #0459c2dd;">Como Construímos este projeto?</h4>
+              <p>Neste projeto utilizamos um programa chamado Packet Tracer, ele é um dos mais conhecidos na área de redes, por simular muito bem como funciona cada componente de um ambiente de rede. O Packet Tracer é amplamente utilizado para fins educacionais e de treinamento, pois permite aos usuários criar e configurar redes virtuais, simulando dispositivos de rede, como roteadores, switches, computadores e servidores.
+              <h4 style="font-size: larger; color: #0459c2dd;"><em>Objetivo?</em></h4>
+              <p>Este projeto consiste em basicamente em configurar uma rede inteiramente no Packet Tracer para permitir a comunicação entre o Cazaquistão e Zimbábue. Isso é feito conectando "fisicamente", (no entanto se tratando de uma simulação), na onde conectamos os dispositivos, atribuindo neles endereços IP a cada um deles, configurando as rotas nos roteadores e testando a conectividade deles. O objetivo é estabelecer uma comunicação eficiente entre os  dois países simulados no software. </p>
+              <h4 style="font-size: larger; color: #0459c2dd; font-weight: bolder;"> <em>FeedBack</em></h4>
+              <p>Como FeedBack final deste projeto, acredito que ele foi fundamental para enterdermos, como funciona a comunicação de redes entre dois pontos mesmo que distantes, deu para ter uma noção de como funciona. </p>
+            </div>
+          </div>
+      </section>
+
+    
+
+
+
+    <footer>
+        <p><h4>
+            <p style="color: rgb(245, 245, 245)">Todos os Direitos Reservados a mim 2023 ;</p>
+        </h4></p>
+    </footer>
+
+    <script>
+        function toggleTexto(botaoId, textoId) {
+          const botao = document.getElementById(botaoId);
+          const texto = document.getElementById(textoId);
+        
+          botao.addEventListener('click', function() {
+            if (texto.style.display === 'none') {
+              texto.style.display = 'block';
+            } else {
+              texto.style.display = 'none';
+            }
+          });
+        }   
+        
+            
+            toggleTexto( 'botao1',  'texto1');
+            toggleTexto( 'botao2',  'texto2');
+            toggleTexto( 'botao3',  'texto3');
+            toggleTexto( 'botao4',  'texto4');
+            toggleTexto( 'botao5',  'texto5');
+            toggleTexto( 'botao6',  'texto6');
+            toggleTexto( 'botao7',  'texto7');
+            toggleTexto( 'botao8',  'texto8');
+            toggleTexto( 'botao9',  'texto9');
+            toggleTexto('botao10', 'texto10');
+            toggleTexto('botao11', 'texto11');
+            toggleTexto('botao12', 'texto12');
+            toggleTexto('botao13', 'texto13');
+            toggleTexto('botao14', 'texto14');
+            toggleTexto('botao15', 'texto15');
+            toggleTexto('botao16', 'texto16');
+            toggleTexto('botao17', 'texto17');
+            toggleTexto('botao18', 'texto18');
+            toggleTexto('botao19', 'texto19');
+            toggleTexto('botao21', 'texto21');
+            toggleTexto('botao22', 'texto22');
+            </script>
+        
+
+</body>
+<script src="script.js"></script>
+</html>
+

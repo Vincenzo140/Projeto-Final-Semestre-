@@ -1,0 +1,15 @@
+# Configurações gerais
+root = true
+
+# Configurações de indentação
+[*]
+indent_style = space
+indent_size = 4
+
+
+ 
+  
+
+# Configurações específicas para arquivos JavaScript
+[*.js]
+indent_size = 2

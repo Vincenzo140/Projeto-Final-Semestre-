@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Helvetica', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+background-color: #f5f5f5;
+justify-content: center;
+text-align: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+transition: background 0.2s linear;
+}
+
+header {
+box-shadow: -5px 2px 15px #5f5f5fad;
+background-color: #033674dd;
+padding-top: 10px;
+padding-bottom: 10px;
+align-items: center;
+transition: 0.3s;
+}
+
+header ul {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+list-style: none;
+align-items: center;
+}
+
+header li {
+transition: 0.3s;
+}
+
+header li:hover {
+font-size: larger;
+}
+
+header a {
+text-decoration: none;
+color: white;
+}
+
+
+.sobre_mim, .botões {
+    height: 300px;
+    width: 70%;
+    box-shadow: -5px 2px 15px #5f5f5fad;
+    border: solid black 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 15px;
+    overflow: hidden;
+    margin-bottom: 55px;
+    margin-top: 50px;
+}
+
+.projetos {
+    width: 70%;
+    box-shadow: -5px 2px 15px #5f5f5fad;
+    border: solid black 4px;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 55px;
+    margin-top: 50px;
+  }
+  
+  .video-container {
+    width: 40%;
+    padding: 10px;
+  }
+  
+  .video-container video {
+    width: 100%;
+  }
+  
+  .text-container {
+    width: 60%;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .text-container h4,
+  .text-container p {
+    margin-bottom: 10px;
+  }
+  
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-item-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  overflow: auto;
+}
+
+.carousel-item-text h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.carousel-item-text p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.carousel-control {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #033674dd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+
+body.dark {
+  background: #191b20;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.checkbox {
+  opacity: 0;
+position: absolute;
+}
+
+.label {
+background-color: #111;
+border-radius: 50px;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 5px;
+position: relative;
+height: 26px;
+width: 50px;
+transform: scale(1.5);
+}
+
+.label .ball {
+background-color: #fff;
+border-radius: 50%;
+position: absolute;
+top: 2px;
+left: 2px;
+height: 22px;
+width: 22px;
+transform: translateX(0px);
+transition: transform 2s linear;
+}
+
+.checkbox:checked + .label .ball {
+transform: translateX(24px);
+}
+
+.fa-moon {
+color: #f1c40f;
+}
+
+.fa-sun {
+color: #f39c12;
+}
+.conteúdos_lp, .conteúdos_pp, .conteúdos_vtd, .conteúdos_fse, .conteúdos_ed, .conteúdos_ec, .conteúdos_teste, .conteúdos_redes{
+  height: auto;
+  width: 70%;
+  border: solid black 2px;
+  text-align: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: -5px 2px 15px #5f5f5fad;
+  margin-bottom: 55px;
+}
+
+.dropbtn {
+  background-color: #245086;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #245086;
+}
+.black-border {
+  border: solid black 4px;
+}
+
+.white-border {
+  border: solid white 4px;
+}
+
+
+
+.botões{
+height: 100px;
+width: 600px;
+border: 4px;
+border-color: black;
+border-radius: 20px;
+border-style: solid;
+text-align: center;
+font-size: 16px; 
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+#btn1, #btn2, #btn3, #btn4{
+height: 50px;
+width: 130px;
+background-color: #033674dd;
+color: #ffffff;
+border-radius: 14px;
+border: 5px, solid;
+border-color: black;
+font-size: 16px;
+}
+
+.voltar{
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+}
+#voltarBtn{
+    margin-left: 10px;
+}
+
+ .button{
+    height: 44px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #191b20;
+    outline: 3px;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  .button svg path {
+    transition: 400ms;
+  }
+  
+  .button:hover {
+    background-color: transparent;
+  }
+  .button
+  
+  .button:hover .text {
+    color: #181717;
+  }
+  
+  .button:hover svg path {
+    fill: #181717;
+  }
+/*////////////////////////////////////////////*/
+
+  .button1{
+    height: 44px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #0077B5;
+    outline: 3px ;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .button1 .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  .button1  svg path {
+    transition: 400ms;
+  }
+  
+  .button1:hover {
+    background-color: transparent;
+  }
+  
+  .button1:hover .text {
+    color: #f5f5f5;
+  }
+  
+  .button1:hover svg path {
+    fill: #0077B5;
+  }
+  .button1 svg {
+    fill: #fff;
+  }
+
+  /*////////////////////////////////////////*/
+
+  .button2{
+    height: 44px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #25D366;
+    outline: 3px;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .button2 .text {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+    
+  }
+  
+  .button2  svg path {
+    transition: 400ms;
+  }
+  
+  .button2:hover {
+    background-color: transparent;
+  }
+  
+  .button2:hover .text {
+    color: #181717;
+  }
+  
+  .button2:hover svg path {
+    fill: #181717;
+  }
+  .button2 svg {
+    fill: #FFFFFF;
+  }
+
+/*//////////////////////////*/
+
+.button3{
+    height: 44px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #f5f5f5;
+    outline: 3px;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .button3 .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  .button3 svg path {
+    transition: 400ms;
+  }
+  
+  .button3:hover {
+    background-color: transparent;
+  }
+  
+  .button3:hover .text {
+    color: #181717;
+  }
+  
+  .button3:hover svg path {
+    fill: #181717;
+  }
